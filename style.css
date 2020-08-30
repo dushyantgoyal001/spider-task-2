@@ -1,0 +1,275 @@
+body {
+	font-family: sans-serif;	
+	background-image: url(images/back.jpg);
+	background-repeat: no-repeat;
+	
+	background-size: cover;
+}
+
+.firstPage-Container {
+   
+	width: 380px;
+    margin-top: 7%;
+    margin-left: 60%;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.4);
+	box-shadow: 0 0 17px #333;
+}
+.firstPage-Container .hide {
+	display: none;
+}
+
+.header-FirstPage {
+	text-align: center;
+	padding-top: 75px;
+}
+
+.header-FirstPage h1 {
+	color: white;
+	font-size: 45px;
+	margin-bottom: 80px;
+}
+
+.main-First {
+	text-align: center;
+}
+
+.main-First input, button {
+	width: 300px;
+	height: 40px;
+	border:none;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+    color: #333;
+    border-radius: 10px;
+	margin-bottom: 60px;
+}
+
+.main-First button {
+	padding-left: 0;
+	background-color: #83acf1;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.main-First button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #7799d4;
+}
+.main-First input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+.hide{
+	display: none;
+}
+
+
+
+.custom-box{
+	max-width: 700px;
+	background-color: white;
+	margin-top: 6rem ;
+	margin-left: 50vw;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.custom-box.hide{
+    display: none;
+}
+
+.btn{
+    padding: 15px 45px;
+    background-color: #03796f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+/* second page css quiz box */
+
+
+.quiz-Box .answersIndicators,
+.quiz-Box .option-Container,
+.quiz-Box .question-Number,
+.quiz-Box .nextQuestionBtn,
+.quiz-Box .question-Text{
+    width: 100%;
+    float: left;
+}
+
+.quiz-Box .question-Number {
+    font-size: 18px;
+    color:#06978B;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    line-height: 25px;
+
+}
+
+
+.quiz-Box .question-Text{
+	font-size: 22px;
+	color: black;
+	line-height: 28px;
+	font-weight: 400;
+	padding: 20px 0;
+	margin: 0;
+	
+	}
+
+
+	.quiz-Box .option-Container .option{
+		background-color: #C2C3C2;
+		padding: 10px 15px;
+		font-size: 16px;
+		line-height: 22px;
+		color: black;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		cursor: pointer;
+		text-transform: capitalize;
+		opacity: 1;
+		/* animation: fadeIn 0.3s ease forwards; */
+	  position: relative;
+	  overflow: hidden;
+	
+	}
+
+	.quiz-Box .option-Container .option.correct{
+		background-color: green;
+		color: white;
+	}
+	.quiz-Box .option-Container .option.wrong{
+		background-color: #FF0000;
+		color: white;
+	}
+
+.quiz-Box .btn{
+    margin: 15px 0;
+
+}
+
+.quiz-Box .answers-Indicators{
+    border-top: 1px solid black;
+    
+}
+.quiz-Box .answers-Indicators div.correct{
+    background-color: green;
+    
+    background-image: url('images/correct.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.quiz-Box .answers-Indicators div.wrong{
+    
+    background-color: red;
+    background-image: url('images/wrong.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quiz-Box .answers-Indicators div{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 50%;
+}
+
+.quiz-Box .answers-Indicators div span{
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 15px;
+
+}
+
+/* result box  */
+
+.result-Box{
+	text-align: center;
+    display: inline-block;
+    margin-left: 50vw;
+    margin-top: 60px;
+}
+
+
+
+.result-Box.hide{
+    display:none ;
+}
+.result-Box h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+
+}
+.result-Box table{
+
+    width: 97%;
+    border-collapse: collapse;
+   
+    
+}
+.result-Box table td{
+    border: 1px solid white;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: white;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+
+}
+.result-Box .btn{
+margin-right: 20px;
+margin-top: 20px;
+}
+
+
+
+
+
+/* responsive */
+
+@media(max-width : 980px){
+    body{
+   
+		background-image: none;
+		background: linear-gradient(45deg , #036eb7 , #64eaff);
+		background-size: cover;
+    }
+    .firstPage-Container{
+        display: inline-block !important;
+        margin: 20% !important;
+        vertical-align: middle !important;
+        width: 60%;
+        height: 60% !important;
+    }
+  
+	.hide{
+		display: none !important;
+
+	}
+	.custom-box{
+		margin: 60px auto;
+	}
+	.result-Box{
+		
+		width: 100%;
+		margin-left: 1vw;
+		margin-top: 40px;
+	}
+	
+}

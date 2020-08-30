@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz!!</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div class="firstPage-Container">
+ 	<div class="header-FirstPage">
+ 		<h1>Welcome To Quiz!!</h1>
+ 	</div>
+ 	<div class="main-First">
+ 		
+ 			<span>
+ 				
+ 				<input type="text" placeholder="First Name" id="userInput1" name="">
+ 			</span><br>
+ 			<span>
+ 			
+ 				<input type="text" placeholder="Last Name" id="userInput2" name="">
+ 			</span><br>
+ 			<span>
+ 				
+ 				<button onclick="startQuiz()" >Quiz!!</button>
+
+ 		
+ 	</div>
+ </div>
+
+<!-- second Page-Container -->
+
+
+ <div class="quiz-Box custom-box hide ">
+	<div class="question-Number">
+	  
+	</div>
+	<div class="question-Text">
+	   
+	</div>
+	<div class="option-Container">
+		
+	</div>
+	<div class="next-QuestionBtn">
+		<button type="button" class="btn" onclick="next()">Next</button>
+
+	</div>
+	<div class="answers-Indicators">
+		
+	</div>
+</div> 
+
+
+<!-- result page  -->
+
+<div class="result-Box customBox hide">
+	<h1>Quiz Result</h1>
+	<table>
+		<tr>
+			<td>Total Question</td>
+			<td>
+				<span class="total-Question"></span>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>correct</td>
+			<td>
+				<span class="total-Correct"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>Wrong</td>
+			<td>
+				<span class="total-Wrong"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>Percentage</td>
+			<td>
+				<span class="percentage-"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>Your Total Score</td>
+			<td> <span class="total-Score"></span>
+			</td>
+
+		</tr>
+	</table>
+	<button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+	<button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+</div>
+
+ <script src="questions.js"></script>
+	<script src="script.js"></script>
+
+	
+</body>
+</html>
